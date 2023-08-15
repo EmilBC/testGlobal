@@ -144,7 +144,7 @@ stage('Execute SQL File') {
     
     stage('Build Docker Image') {
 	    steps{
-     bat "docker -H  tcp://2.tcp.eu.ngrok.io:16093  build -t docgen:${env.BUILD_NUMBER} ."
+     bat "docker -H  tcp://4.tcp.eu.ngrok.io:11932  build -t testFinal:${env.BUILD_NUMBER} ."
 	   }
     }
     
