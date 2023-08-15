@@ -155,13 +155,7 @@ stage('Execute SQL File') {
 	  //  }
     //}
 
-  stage ('Deploy') {
-      steps {
-        script {
-          deploy adapters: [tomcat9(credentialsId: 'tomcat_credential', path: '', url: 'http://10.12.1.182:8080/')], contextPath: '/testGlobal', onFailure: false, war: 'webapp/target/*.war' 
-        }
-      }
-    } 
+  
 
 
 	    
