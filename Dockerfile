@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-COPY target/SpringMVCHibernate.jar /app.jar
-CMD ["java","-jar","/app.jar"]
+COPY target/springmvc5-helloworld-exmaple-0.0.1-SNAPSHOT.war /app.war
+CMD ["java","-war","/app.war"]
 EXPOSE 2222
